@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5D7;
+    color: #4a4a4a;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+    background-color: #FFCCE1;
+    color: #4a4a4a;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    border-top: 1px solid #E195AB;
+    margin: 0;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #F2F9FF;
+}
+
+.header-left a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
+}
+
+.header-left a:hover {
+    color: #E195AB;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E195AB;
+    text-align: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E195AB;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.search-bar img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Product Showcase */
+.product-showcase {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #FFF5D7;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Arrow container for proper alignment */
+.product-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;  /* Ensures full width of the container is used */
+}
+
+.arrow {
+    background-color: transparent;
+    border: 1px solid #E195AB;
+    color: #E195AB;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.arrow:hover {
+    background-color: #E195AB;
+    color: #fff;
+    
+}
+
+/* Flex for product details */
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.product-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-info {
+    width: 350px;
+}
+
+.product-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #E195AB;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.shop-now {
+    background-color: #E195AB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shop-now:hover {
+    background-color: #FFCCE1;
+}
+
+/* Product Navigation Arrows */
+.product-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* This will place arrows at opposite ends */
+    width: 100%;  /* Ensures full width of the container is used */
+}
+
+.arrow {
+    background-color: transparent;
+    border: 1px solid #E195AB;
+    color: #E195AB;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.arrow:hover {
+    background-color: #E195AB;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F2F9FF;
+    color: #4a4a4a;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #E195AB;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
