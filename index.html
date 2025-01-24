@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Gallery</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,17 +27,24 @@
             </div>
         </div>
     </header>
-
-    <section class="hero-section">
-        <video autoplay muted loop id="background-video">
-            <source src="video/0122.mp4" type="video/mp4">
-        </video>
-        <div class="hero-content">
-            <h1>Your base for beauty, no matter the skin you're in</h1>
-            <p> Your one-stop destination for flawless beauty, made for every skin type</p>
-            <button class="shop-now">Shop Now</button>
+<section class="hero-section">
+    <video autoplay muted loop id="background-video">
+        <source src="video/0122.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h1>Your base for beauty, no matter the skin you're in</h1>
+        <p>Your one-stop destination for flawless beauty, made for every skin type</p>
+        <button class="shop-now">Shop Now</button>
+        <!-- Social Media Icons -->
+        <div class="hero-social-icons">
+            <a href="#" class="hero-social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hero-social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hero-social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hero-social-icon"><i class="fab fa-youtube"></i></a>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Gallery Stats Section -->
     <div class="gallery-header">
@@ -73,8 +81,34 @@
     </section>
 
     <footer>
-        <p>Contact us at: <a href="mailto:info@fictionalstore.com">info@fictionalstore.com</a> | Phone: 123-456-7890</p>
-        <p>&copy; 2025 Fictional Store</p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your destination for beauty, made for every skin type. SoftLuxe offers products tailored for everyone.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@fictionalstore.com">info@fictionalstore.com</a></p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-media-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Terms & Conditions</a>
+                <span>|</span>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 SoftLuxe. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
