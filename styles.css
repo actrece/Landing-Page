@@ -219,7 +219,6 @@ body {
 }
 
 /* About Us Section */
-/* About Us Section */
 .slider {
   position: relative;
   width: 100%;
@@ -277,7 +276,6 @@ body {
 .next-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 @media (max-width: 768px) {
   .slider {
     max-width: 100%;

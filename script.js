@@ -1,29 +1,34 @@
-// JavaScript for the slider buttons
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+document.addEventListener('DOMContentLoaded', () => {
+  // Your JavaScript code here
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
 
-const prevButton = document.querySelector('.prev-btn');
-const nextButton = document.querySelector('.next-btn');
-const slidesContainer = document.querySelector('.slides-container');
+  const prevButton = document.querySelector('.prev-btn');
+  const nextButton = document.querySelector('.next-btn');
+  const slidesContainer = document.querySelector('.slides-container');
 
-// Function to show the current slide based on the index
-function showSlide(index) {
-  if (index < 0) {
-    currentSlide = totalSlides - 1;
-  } else if (index >= totalSlides) {
-    currentSlide = 0;
+  function showSlide(index) {
+    if (index < 0) {
+      currentSlide = totalSlides - 1;
+    } else if (index >= totalSlides) {
+      currentSlide = 0;
+    }
+    slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    console.log("showSlide called with index:", index); // Added for debugging
   }
-  slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
 
-// Event listeners for the buttons
-prevButton.addEventListener('click', () => {
-  currentSlide--;
-  showSlide(currentSlide);
-});
+  showSlide(currentSlide); // Initial display
 
-nextButton.addEventListener('click', () => {
-  currentSlide++;
-  showSlide(currentSlide);
+  prevButton.addEventListener('click', () => {
+    console.log("prevButton clicked"); // Added for debugging
+    currentSlide--;
+    showSlide(currentSlide);
+  });
+
+  nextButton.addEventListener('click', () => {
+    console.log("nextButton clicked"); // Added for debugging
+    currentSlide++;
+    showSlide(currentSlide);
+  });
 });
