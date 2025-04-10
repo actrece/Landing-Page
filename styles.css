@@ -219,43 +219,101 @@ body {
 }
 
 /* About Us Section */
-.about-us {
-    background-color: #FFF5D7;
-    padding: 50px 20px;
+/* About Us Section */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjusted to make the images smaller */
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-    gap: 20px;
-    text-align: left;
-    padding: 20px;
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-/* Left Side - Text */
-.about-text {
-    flex: 1;
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 60%; /* Smaller size */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.text {
+  background-color: #FFF5D7;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure the buttons are on top */
+}
+
+.prev-btn,
+.next-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10; /* Ensure the buttons are clickable */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .slider {
+    max-width: 100%;
+  }
+
+  .text h2 {
+    font-size: 20px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .prev-btn,
+  .next-btn {
     font-size: 18px;
-    color: #4a4a4a;
-    line-height: 1.6;
-    max-width: 500px;
+    padding: 8px 16px;
+  }
 }
 
-/* Right Side - Image */
-.about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.about-image img {
+  .about-content img {
     width: 80%;
-    max-width: 300px;
-    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .about-arrow {
+    font-size: 28px;
+  }
 }
+
 
 /* Footer Styles */
 footer {
